@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f2ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004a99;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .test-code {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Details Submitted Successfully!</h1>
+        <p>Your unique test code is:</p>
+        <p class="test-code" id="testCode">{{ test_code }}</p>
+        <button onclick="copyToClipboard()">Copy Test Code</button>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const testCode = document.getElementById('testCode').textContent;
+            navigator.clipboard.writeText(testCode).then(function() {
+                alert('Test code copied to clipboard: ' + testCode);
+            }, function(err) {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+</html>

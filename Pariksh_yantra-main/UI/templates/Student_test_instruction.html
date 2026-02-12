@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Instructions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #00bfff); /* Blue gradient background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px 40px;
+            max-width: 800px; /* Increased width */
+            width: 90%; /* Ensures the card takes a percentage of the available width */
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px; /* Increased font size */
+            font-weight: 600;
+            color: #1e90ff;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Added text shadow for better visibility */
+        }
+
+        .instruction-card {
+            background-color: #f0f8ff; /* Light blue background for instruction cards */
+            border: 1px solid #1e90ff; /* Blue border for emphasis */
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0; /* Space between cards */
+            text-align: left; /* Left align text within cards */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effect */
+        }
+
+        .instruction-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+        }
+
+        .instruction-card p {
+            color: #1e90ff; /* Blue text for instructions */
+            font-size: 16px;
+            margin: 0; /* Remove default margin */
+        }
+
+        label {
+            color: #1e90ff; /* Blue text for checkbox label */
+            font-size: 16px;
+            display: inline-flex; /* Aligns checkbox and text */
+            align-items: center; /* Vertically centers the text with checkbox */
+            cursor: pointer; /* Changes cursor to pointer */
+            margin-top: 20px; /* Added margin for spacing */
+            transition: color 0.3s ease; /* Transition for hover effect */
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px; /* Space between checkbox and label */
+            accent-color: #1e90ff; /* Blue color for checkbox */
+        }
+
+        button[type="submit"] {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 20px;
+            font-size: 18px; /* Increased font size */
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+            margin-top: 15px; /* Added margin for better spacing */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for button */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #00bfff; /* Change color on hover */
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+        }
+
+        /* Adding smooth animation */
+        .container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 24px; /* Responsive font size */
+            }
+
+            button[type="submit"] {
+                font-size: 16px; /* Responsive font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Test Instructions</h2>
+        <div class="instruction-card">
+            <p>1. Ensure you have a stable internet connection.</p>
+        </div>
+        <div class="instruction-card">
+            <p>2. Do not refresh the page once the test starts.</p>
+        </div>
+        <div class="instruction-card">
+            <p>3. You have limited time to complete the test.</p>
+        </div>
+        <div class="instruction-card">
+            <p>4. Read each question carefully before answering.</p>
+        </div>
+        <div class="instruction-card">
+            <p>5. Avoid using external resources during the test.</p>
+        </div>
+        <div class="instruction-card">
+            <p>6. Ensure your device is fully charged or plugged in.</p>
+        </div>
+
+        <form action="/test_instruction" method="POST">
+            <label>
+                <input type="checkbox" name="agree" required> I have read and agree to the instructions.
+            </label><br>
+
+            <button type="submit">Start Test</button>
+        </form>
+    </div>
+</body>
+</html>

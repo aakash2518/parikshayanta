@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Details Submission</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f2ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004a99;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            background-color: #f1f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group i {
+            font-size: 20px;
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        .form-group input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .form-group input::placeholder {
+            color: #777;
+        }
+
+        .add-question {
+            background-color: #28a745;
+            color: #fff;
+            padding: 12px;
+            margin: 15px 0;
+            cursor: pointer;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-question:hover {
+            background-color: #218838;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .question-section h2 {
+            text-align: center;
+            color: #004a99;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .question-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f1f9ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+            position: relative;
+        }
+
+        .question-container input {
+            width: 45%;
+            padding: 12px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        /* Position the remove icon inside the question container on the right */
+        .remove-question {
+            color: #dc3545;
+            font-size: 20px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .remove-question:hover {
+            color: #c82333;
+            background: #fff5f6;
+        }
+
+        @keyframes pop-in {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .question-container {
+            animation: pop-in 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Submit Exam Details</h1>
+    <form action="/submit_test_details" method="post">
+        <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" placeholder="Exam Name" required>
+        </div>
+
+        <div class="form-group">
+            <i class="fas fa-clock"></i>
+            <input type="time" name="time" required>
+        </div>
+
+        <div class="form-group">
+            <i class="fas fa-calendar-day"></i>
+            <input type="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <i class="fas fa-hourglass-start"></i>
+            <input type="text" name="duration" placeholder="Duration (e.g., 2 hours)" required>
+        </div>
+
+        <div class="form-group">
+            <i class="fas fa-book"></i>
+            <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="form-group">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <input type="text" name="faculty" placeholder="Faculty Name" required>
+        </div>
+
+        <div class="form-group">
+            <i class="fas fa-sort-numeric-up-alt"></i>
+            <input type="number" name="total_marks" placeholder="Total Marks" required>
+        </div>
+
+        <!-- PDF upload for full question paper (optional) -->
+        <div class="form-group">
+            <i class="fas fa-file-pdf"></i>
+            <input type="file" name="question_pdf" accept="application/pdf">
+        </div>
+
+        <div class="question-section">
+            <h2>Add Questions</h2>
+            <div id="questions-container">
+                <div class="question-container">
+                    <input type="text" name="questions" placeholder="Question" required>
+                    <input type="number" name="marks" placeholder="Marks" required>
+                    <!-- Use an <button> with fallback × so icon shows even if Font Awesome doesn't load -->
+                    <button type="button" class="remove-question" onclick="removeQuestion(this)">×</button>
+                </div>
+            </div>
+            <div class="add-question" onclick="addQuestion()">+ Add Another Question</div>
+        </div>
+
+        <button type="submit">Submit Exam Details</button>
+    </form>
+
+    <script>
+        function addQuestion() {
+            const container = document.getElementById('questions-container');
+            
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('question-container');
+
+            const questionInput = document.createElement('input');
+            questionInput.type = 'text';
+            questionInput.name = 'questions';
+            questionInput.placeholder = 'Question';
+            questionInput.required = true;
+
+            const marksInput = document.createElement('input');
+            marksInput.type = 'number';
+            marksInput.name = 'marks';
+            marksInput.placeholder = 'Marks';
+            marksInput.required = true;
+
+            const removeBtn = document.createElement('button');
+            removeBtn.type = 'button';
+            removeBtn.classList.add('remove-question');
+            removeBtn.textContent = '×';
+            removeBtn.onclick = function() { removeQuestion(removeBtn); };
+
+            questionDiv.appendChild(questionInput);
+            questionDiv.appendChild(marksInput);
+            questionDiv.appendChild(removeBtn);
+
+            container.appendChild(questionDiv);
+        }
+
+        function removeQuestion(element) {
+            const container = element.parentElement;
+            container.remove();
+        }
+    </script>
+</body>
+</html>

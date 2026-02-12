@@ -1,0 +1,81 @@
+name,time,date,duration,subject,faculty ,total  marks,unique code
+aru,21:20,08-10-2024,2,java,neelu,20,e3ab6902
+arunmnjfdn,16:40,11-10-2024,2,dsa,meena,20,3d57b536
+arunmnjfdn,16:40,11-10-2024,2,dsa,manoj,20,87bd3c74
+arunmnjfdn,19:23,03-10-2024,2,dsa,manoj,20,61e14c35
+arunmnjfdn,19:23,03-10-2024,2,kkgyu,manoj,20,eda00e0e
+arunmnjfdn,19:23,03-10-2024,2,kkgyu,manoj,20,dc187eb3
+arunmnjfdn,19:26,11-10-2024,2,kkgyu,manoj,20,324ebd7f
+arunmnjfdn,19:23,11-10-2024,2,kkgyu,manoj,20,9e295a89
+mathur,20:23,01-11-2024,2,dsa,meena,20,c20b82d7
+mathur1234,19:28,09-10-2024,2,dsa,meena,20,380f6a7f
+arjun ji 23,21:29,02-10-2024,2,dsa,meena,20,90f215cf
+babita,20:30,09-10-2024,2,dsa,meena,20,eab4325e
+babita,20:30,09-10-2024,2,dsa,meena,20,9204f416
+manav,15:33,15-10-2024,2,dsa,meena,20,fbb38ae9
+manav rachna,15:57,17-10-2024,2,dsa,meena,20,40f53f98
+manav rachna,18:10,18-10-2024,2,dsa,meena,20,1185c1b9
+harsh,18:16,09-10-2024,2,dsa,meena,20,30cac171
+ronak,17:49,15-10-2024,2,dsa,meena,20,97453a65
+ronak,15:58,2024-10-07,2,dsa,meena,20,44873692
+reema,19:43,2024-09-30,2,dsa,meena,20,a6167981
+mid term,19:11,2024-10-06,1,oops using java ,meena mam,40,0e6eaba1
+Arjun ,15:01,2024-10-24,2,Physics ,Manoj,250,c58cb9ed
+a,14:05,2024-10-15,1,verify,a,10,e5bd9428
+Lulla Singh,23:02,41222-03-12,32,Angrezii,Mr AtishBaaji Lulla,4500,32b74361
+mid ,09:00,2024-10-14,2,oop,arjun mathur,40,489dcad0
+mid term,20:35,2024-10-15,2,oop,arjun mathur,40,62cc33bf
+Mid Term Exam,09:01,2024-10-16,2,Social Science,Arjun Mathur,20,156f94a2
+Mid Term Exam,19:15,2024-10-23,2,Social Science,Arjun Mathur,20,c6805741
+Mid Term Exam,11:16,2025-01-25,2,Social Science,Arjun Mathur,20,54b8e98c
+ete,17:31,2025-09-26,2,eng,aakash,9,5fdfdc1c
+ete,17:35,2025-09-26,2,eng,aakash,9,825280bd
+Name,Time,Date,Duration,Subject,Faculty Name,Total Marks,Unique Test Code
+
+ete,05:01,2025-09-27,2min,eng,aakash,5,d4841f7b
+ete,06:28,2025-09-27,2min,eng,aakash,5,f77e25b0
+ete,06:31,2025-09-27,2min,eng,aakash,10,75e85754
+ete,06:33,2025-09-27,2min,eng,aakash,10,e4858db5
+ete,06:44,2025-09-27,2min,eng,aakash,10,29f46aa5
+ete,06:48,2025-09-27,2min,eng,aakash,10,a2627ce0
+ete,06:51,2025-09-27,2min,java,aakash,10,f863453d
+ete,06:55,2025-09-27,2min,java,aakash,10,a50cf695
+ete,07:31,2025-09-27,2min,java,aakash,10,ddf00b00
+ete,07:43,2025-09-27,1hour,java,aakash,10,574079f3
+ete,07:49,2025-09-27,2 hours,eng,aakash,5,50432ed9
+ete,07:51,2025-09-27,1hour,eng,dani,5,22b9e562
+ete,08:47,2025-09-27,1hour,java,aakash,5,177cb888
+ete,08:52,2025-09-27,1hour,eng,aakash,5,78fe60b0
+ete,09:06,2025-09-27,2 hours,java,aakash,5,6328aa57
+ete,09:08,2025-09-27,1hour,eng,aakash,5,ae756989
+ete,10:10,2025-09-27,2 hours,eng,aakash,5,15624f07
+ete,10:15,2025-09-27,1hour,eng,aakash,5,16a0a5c6
+ete,13:24,2025-09-27,1hour,java,aakash,5,cdc4cbe5
+ete,13:40,2025-10-02,2,eng,aakash,9,2d90a9e0
+ete,13:41,2025-10-02,2,java,aakash,9,1464788c
+ete,13:44,2025-10-02,2,eng,aakash,7,ecbc8c27
+ete,13:47,2025-10-02,2 hours,eng,aakash,9,6124d66e
+ete,18:51,2025-10-02,2 hours,java,aakash,9,9ac4608b
+ete,22:00,2025-10-11,2 hours,java,aakash,10,f0ad193d
+ete,15:01,2025-10-07,2 hours,java,aakash,5,d617288b
+ete,15:04,2025-10-08,2 hours,eng,aakash,5,ce64b7ba
+ete,15:11,2025-10-07,1min,java,aakash,5,2c216091
+ete,16:27,2025-10-07,1hour,java,aakash,5,c8b856cd
+ete,10:30,2025-10-08,1min,eng,aakash,5,450354b9
+ete,16:48,2025-10-08,2,java,aakash,5,4290dce4
+ete,23:46,2025-10-08,1min,java,aakash,5,28d088fa
+ete,23:54,2025-10-08,2 hours,java,aakash,5,d8d331dd
+ete,02:09,2025-10-09,2,java,aakash,5,aa9ab0e4
+ete,14:31,2025-10-15,2min,java,aakash,5,a1ac322c,
+ete,15:14,2025-10-21,2,java,aakash bhatt,5,703755a5,
+ete,15:18,2025-10-21,2,java,aakash bhatt,5,aa848363,
+ete,14:59,2025-11-23,2,java,aakash bhatt,5,c35cec31,
+ete,15:14,2025-11-23,2,java,aakash bhatt,5,edfe43e2,
+ete,17:05,2025-11-23,2,java,aakash bhatt,5,882ea9a7,
+ete,17:18,2025-11-23,2,java,aakash bhatt,5,dca12c5b,
+ete,22:40,2025-11-27,2,java,aakash bhatt,5,6769dc57,
+ete,22:26,2025-12-06,2,java,aakash bhatt,5,82ca24bf,
+aakash,23:18,2026-01-09,2,java,aakash bhatt,5,188ecb16,
+ete,10:23,2026-01-11,2,java,aakash bhatt,5,98365677,
+ete,10:43,2026-01-11,2,java,aakash bhatt,5,725cb273,
+ete,12:38,2026-01-17,2,java,aakash bhatt,5,fb49160d,
